@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100vw;
+  height: 100%;
+}
+
+.nav {
+  height: 70px;
+  background-color: #081b31;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav h2 {
+  padding: 20px;
+  font-size: 32px;
+}
+
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 35px;
+}
+
+.choices img {
+  width: 200px;
+  height: 200px;
+  border: #081b31 7px solid;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.choices img:hover {
+  transform: scale(1.2);
+}
+
+.score-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  gap: 80px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#user-score,
+#comp-score {
+  font-size: 65px;
+}
+
+.message-container {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg-container {
+  background-color: #081b31;
+  color: #fff;
+  height: 50px;
+  width: 530px;
+  font-size: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social_media h2 {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social_media a {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #081b31;
+}
+
+.social_media a:hover {
+  color: #081b31c0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* For mobile */
+@media only screen and (max-width: 768px) {
+  .nav {
+    height: 50px;
+  }
+
+  .nav h2 {
+    padding: 11px;
+    font-size: 24px;
+  }
+
+  .choices {
+    padding: 20px;
+  }
+
+  .choices img {
+    width: 100px;
+    height: 100px;
+    border: #081b31 4px solid;
+  }
+
+  .score-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 40px;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 48px;
+  }
+
+  .message-container {
+    margin-top: 40px;
+  }
+
+  .msg-container {
+    height: 40px;
+    width: 320px;
+    font-size: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social_media {
+    margin-top: 30px;
+  }
+}
